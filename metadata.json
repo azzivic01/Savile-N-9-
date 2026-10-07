@@ -1,0 +1,6 @@
+{
+  "name": "Savile N° 9 — The Art of the Cut",
+  "description": "Private luxury bespoke tailoring atelier. Hand-cut garments made for one, measured to the millimeter.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

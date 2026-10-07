@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0c0d10;
+  color: #e4e1d9;
+  letter-spacing: -0.01em;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Subtle fabric grain overlay */
+.bg-wool-grain {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Chalk mark line styles */
+.chalk-line {
+  stroke-dasharray: 6 3;
+  stroke: rgba(244, 242, 236, 0.85);
+  filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.4));
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0c0d10;
+}
+::-webkit-scrollbar-thumb {
+  background: #252830;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #393e4a;
+}
